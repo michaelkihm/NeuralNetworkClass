@@ -1,0 +1,6 @@
+#Add files and to directories to be ignored
+
+
+#Directories
+.vscode/*
+.idea/*
