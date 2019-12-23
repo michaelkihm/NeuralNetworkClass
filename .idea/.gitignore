@@ -1,0 +1,6 @@
+# Default ignored files
+
+#Add directories
+/workspace.xml
+/.vscode/*
+/.idea/*
