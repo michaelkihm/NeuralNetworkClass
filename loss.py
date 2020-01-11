@@ -14,6 +14,8 @@ class Loss(object):
     def forward(self, prediction: np.ndarray, target: np.ndarray) -> float:
         '''
         Computes the actual loss value
+        @param target -> real output values
+        @param prediction -> predicted values
         '''
         assert_same_shape(prediction, target)
 
