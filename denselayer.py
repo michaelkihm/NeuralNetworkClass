@@ -21,8 +21,9 @@ class Dense(Layer):
         '''
         Defines the operations of a fully connected layer.
         '''
-        #if self.seed:
-         #   np.random.seed(self.seed)
+        # pylint: disable=no-member
+        if self.seed:
+           np.random.seed(self.seed)
 
         self.params = []
 
