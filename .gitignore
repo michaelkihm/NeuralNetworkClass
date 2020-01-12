@@ -4,3 +4,6 @@
 #Directories
 .vscode/*
 .idea/*
+
+#files a
+*.pyc
