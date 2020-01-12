@@ -1,6 +1,6 @@
 from copy import deepcopy
 from typing import Tuple
-from numpy import np
+import numpy as np
 from neuralnetwork import NeuralNetwork
 from optimizer import Optimizer
 from helperfunctions import permute_data
@@ -19,7 +19,7 @@ class Trainer(object):
         self.best_loss = 1e9
         setattr(self.optim, 'net', self.net)
         
-    def generate_batches(self, X: np.np.ndarray, y: np.ndarray, size: int = 32) -> Tuple[np.ndarray]:
+    def generate_batches(self, X: np.ndarray, y: np.ndarray, size: int = 32) -> Tuple[np.ndarray]:
         '''
         Generates batches for training 
         '''
