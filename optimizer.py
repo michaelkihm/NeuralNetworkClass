@@ -8,6 +8,8 @@ class Optimizer(object):
         Every optimizer must have an initial learning rate.
         '''
         self.learning_rate = learning_rate
+        self.first = True
+        self.step_number = 0
 
     def step(self) -> None:
         '''
